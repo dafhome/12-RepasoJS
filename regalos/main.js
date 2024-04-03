@@ -31,9 +31,9 @@ function contarRegalos() {
     let validar = false;
     let avisoCantidad = false;
     while (validar == false) {
-        if (regalosCantidad<100&&!avisoCantidad){
+        if (regalosCantidad < 100 && !avisoCantidad) {
             alert("¡Ojo! Te quedan menos de 100 regalos.");
-            avisoCantidad=true;
+            avisoCantidad = true;
         }
         else if (regalosCantidad > 0 && (isNaN(regalosCantidad)) == false) {
             regalosEntregados = parseInt(prompt("¿Cuantos regalos has entregado hoy?"));
@@ -49,7 +49,7 @@ function contarRegalos() {
             else {
                 alert("¿Estas seguro?. El valor introducido no es un número.");
             }
-        }
+        }                                    
 
         else {
             validar = true;
